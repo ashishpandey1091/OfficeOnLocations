@@ -1,0 +1,58 @@
+@model DataAshishPandey.Models.Office
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Office</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.branchName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.branchName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.companyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.companyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.contact)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.contact)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.departments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.departments)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.emailID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.emailID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.numberOfEmployees)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.numberOfEmployees)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

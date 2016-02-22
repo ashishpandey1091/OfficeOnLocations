@@ -1,0 +1,72 @@
+@model DataAshishPandey.Models.Office
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Office</h4>
+        <hr />
+        <div asp-validation-summary="ValidationSummary.ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="branchName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="branchName" class="form-control" />
+                <span asp-validation-for="branchName" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="companyName" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="companyName" class="form-control" />
+                <span asp-validation-for="companyName" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="contact" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="contact" class="form-control" />
+                <span asp-validation-for="contact" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="departments" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="departments" class="form-control" />
+                <span asp-validation-for="departments" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="emailID" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="emailID" class="form-control" />
+                <span asp-validation-for="emailID" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="numberOfEmployees" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="numberOfEmployees" class="form-control" />
+                <span asp-validation-for="numberOfEmployees" class="text-danger" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
